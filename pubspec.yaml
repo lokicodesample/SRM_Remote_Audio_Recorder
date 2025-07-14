@@ -1,0 +1,41 @@
+name: srm_remote_audio_app
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0-180.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.4.0
+  provider: ^6.1.5
+  mobile_scanner: ^7.0.1
+  flutter_native_splash: ^2.4.6
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#003366"
+  image: assets/images/splash_logo.png
+  image_dark: assets/images/splash_logo.png
+
+  # Centers the image on the screen without stretching.
+  android_gravity: center
+  ios_content_mode: center
+  
+  web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

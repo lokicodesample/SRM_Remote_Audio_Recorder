@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SRM Desktop Control
+Comment=All-in-one recorder with local and remote control.
+Exec=/home/fun/SRM Project/launcher.sh
+Icon=/home/fun/SRM Project/srm_logo.png
+Path=/home/fun/SRM Project
+Terminal=false
+Categories=Audio;Recorder;Utility;
+StartupNotify=true
