@@ -8,6 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:srm_remote_audio_app/main.dart';
+import 'package:srm_remote_audio_app/state/recorder_state.dart';
+import 'package:srm_remote_audio_app/screens/connect_screen.dart';
+import 'package:srm_remote_audio_app/screens/recorder_screen.dart';
 
 void main() {
   testWidgets('App starts with ConnectScreen', (WidgetTester tester) async {
@@ -24,9 +27,9 @@ void main() {
     expect(find.byType(RecorderScreen), findsNothing);
 
     // Verify that the title of the ConnectScreen is correct.
-    expect(find.text('Connect to Recorder'), findsOneWidget);
+    expect(find.text('SRM Remote Recorder'), findsOneWidget);
 
     // Verify that the input field for the IP address is present.
-    expect(find.widgetWithText(TextField, 'Enter Raspberry Pi IP Address'), findsOneWidget);
+    expect(find.widgetWithText(TextField, 'Pi IP or ngrok URL'), findsOneWidget);
   });
 }

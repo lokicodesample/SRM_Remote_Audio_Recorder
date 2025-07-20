@@ -31,7 +31,7 @@ class SrmRemoteAudioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SRM Remote Recorder',
+      title: 'SRM RemoteRec',
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
       home: const AppBody(),
